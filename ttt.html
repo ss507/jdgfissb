@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	a{
+		font-size:5em;
+	}
+	a:link{
+		color:blank;
+      background:red;-
+      text-decoration:none;
+	}
+	a:visited{
+        color:green;
+	}
+	a:hover{
+		color:yellow;
+	}
+	a:active{
+		color:blue;
+	}
+	.c{
+		width: 100px;
+      height:100px;
+      border:2px solid #ddd;
+      position: relative;
+	}
+	.c .phone{
+      width:900px;
+      height: 900px;
+      background: url("http://sc.jb51.net/uploads/allimg/140425/10-140425230500512.jpg") no-repeat;
+      position: absolute;
+      left:200px;
+      top:170px;
+      opacity: 0;
+      transition:all 2s;
+    }
+    .c:hover .phone{
+      opacity: 2;
+    }
+    
+</style>
+</head>
+<body>
+	<a href="//www.baidu.com">谷歌</a>
+	<div class="c">
+    <div class="phone"></div>
+  </div>
+</html>
