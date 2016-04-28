@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  figure{
+    width:800px;
+    height:400px;
+    border:10px solid gray;
+    box-shadow:0px 0px 10px 0px #000;
+    overflow:hidden;
+    position:relative;
+  }
+    figure img{
+      transition: all.6s;
+      transform:scale(1);
+    }
+    figure:hover img{
+      transform:scale(1.5);
+    }
+    figure figcaption{
+      position:absolute;
+      z-index:5;
+      left:0;
+      bottom:0;
+      height:70px;
+      width:100%;
+      color:rgba(0,60,90,0);
+      font-weight:bold;
+      background-color:rgba(255,130,255,.6);
+      text-align:center;
+      line-height:70px;
+      transition:color .5s,background-color 2s;
+    }
+    figure:hover figcaption{
+      color:rgba(150,90,255,.9);
+      background-color:rgba(185,255,60,.6);
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <figcaption>唯美</figcaption>
+  <img src="http://img.hb.aicdn.com/554d72fd1e5e1339d1b0045d8efcada3572b78bda20a-XU0LS4_fw658">
+  </figure>
+</body>
+</html>
